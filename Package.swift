@@ -16,7 +16,7 @@ let package = Package(
                 exclude: [],
                 resources: [],
                 publicHeadersPath: "",
-                cSettings: []),
+                cSettings: [.unsafeFlags(["-w"])]),
         .testTarget(
             name: "BabyBluetoothTests",
             dependencies: ["BabyBluetooth"]),
